@@ -97,7 +97,7 @@ def function(label,confirmButton):
         resultName.configure(state="disabled")
         buttonOpen=tk.CTkButton(frame, text="Open", fg_color="lightgreen", text_color="black", width=50)
         buttonOpen.configure(command=lambda j=i: openFile(listFiles[j].filepath))
-        buttonDelete=tk.CTkButton(frame, fg_color="lightgreen", text_color="black", width=50)
+        buttonDelete=tk.CTkButton(frame,text="Delete", fg_color="lightgreen", text_color="black", width=50)
         buttonDelete.configure(command=lambda :delete_files(listFiles))
         i+=1
         #result.place(x=STANDARD_X, y=STANDARD_Y)
